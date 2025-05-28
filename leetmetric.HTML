@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="leetmetric.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="leetmetric.css">
+</head>
+<body>
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+  <source src="3191573-uhd_3840_2160_25fps.mp4" type="video/mp4">
+</video>
+   <div class="container">
+   <!-- heading
+   input_box
+   stats -->
+
+   <!-- heading -->
+   <div class="btn"><span><h1 id="font1">`Leetmetric   `<img id="pic" src="icons8-leetcode-96.png" alt=""></span></h1></div>
+   <h2  id="font2">.webAPP</h2>
+
+   <!-- user_input_area -->
+   <div id="user_input_container"  >
+           <div><input  id="input" type="text" class="form__input" id="name" placeholder="Enter your leetcode ID" required=""><label for="name" class="form__label">leetcode ID</label></div> 
+           <div class="wrapper" a href="#" > <button type="submit" id="input2" >search</button></div>
+            
+            </div>
+
+  
+
+   <!-- stats -->
+    <div id="stats">
+        <div id="con" >
+       <div class="stats"> <h2 >Leetcode Stats</h2>
+            <p id="text">hello folks !<br> This site allows users to enter their LeetCode user ID <br> to quickly fetch their profile details. <br>
+It connects to LeetCode's <br> API to retrieve information <br> without actual sigin process </p></div></div>
+        <div class="round1 round">
+            <div class="round_stats easy">easy  : <br> </div>
+            <br>
+            <span id="easyLabel"></span>
+            
+        </div>
+        <div class="round2 round">
+            <div class="round_stats medium">medium  : <br> </div>
+            <br>
+            <span id="mediumLabel"></span>
+            
+        </div>
+        <div class="round3 round">
+            <div class="round_stats hard">hard : <br> </div>
+            <br>
+            <span id="hardLabel"></span>
+            
+        </div>
+       
+    </div>
+         <div class="details pp">
+            <h3 class="det"  id="appear1" ><br></h3>
+            <h3 class="det"id="appear2" ><br></h3>
+            <h3 class="det"id="appear3" ><br></h3>
+            
+         </div>
+     </div>
+
+    <script src="leetmetric.js" ></script>
+</body>
+
+</html>

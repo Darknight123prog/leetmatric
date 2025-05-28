@@ -1,0 +1,351 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+*{
+    padding:0;
+    margin:0;
+    font-family: fantasy;
+    color:aliceblue
+
+}
+#pic{
+    border-radius: 10px;
+    height: 4rem;
+}
+#background-video {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
+#font1{
+    color:antiquewhite;
+    font-size: 4rem;
+}
+#font1:hover{
+    color: aqua;
+    text-shadow: 20px 2px black;
+}
+#font2{
+    color:antiquewhite;
+    transition: 2s;
+}
+#label2:hover{
+box-shadow: 0 20px 20px 20px black;
+}
+.container{
+    height:100%;
+    width:100%;
+    background-color: transparent;
+    padding:40px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    
+
+}
+#user_input_container{
+    padding: 10px;
+    height:30vh;
+    width:70vw;
+    /* border: solid black 2px; */
+   display: flex;
+   justify-content: flex-start;
+    margin:4px;
+    justify-content: space-around;
+    
+    
+
+}
+#input{
+    width:35vw;
+    height:5vh;
+    margin:5px;
+    border:black,solid,2px;
+    border-radius: 40px;
+background: transparent;
+  box-shadow: 0 8px 8px -4px lightblue;   
+}
+#input2{
+    width:8vw;
+    height: 6vh;
+   
+    margin-top: 8px;
+    background-color: transparent;
+    font-weight: 800;
+    border-radius: 10px;
+    box-shadow: 20px;
+    
+}
+
+#stats{
+    border:solid,black,2px;
+    height:30vh;
+    border-radius: 40px;
+    width:90%;
+    display :flex;
+    padding:30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#stats:hover{
+    box-shadow: 2px 10px 20px black;
+}
+.round1,.round2,.round3{
+    height:200px;
+    width:200px;
+     background: #020024;
+    background: linear-gradient(225deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 41%, rgba(5, 95, 178, 1) 72%, rgba(0, 212, 255, 1) 91%);
+    border:solid, rgb(4, 85, 4) 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* important */
+    background: conic-gradient(rgb(38, 208, 49) var(--progress-degree,0%),black 0%);
+   
+ 
+   transition: transform 2s ease;
+
+
+   /* important */
+}
+.round:hover{
+    border-radius: 50%;
+  box-shadow: 4px 20px 40px -2px rgb(15, 14, 14);
+}
+.det{
+    
+}
+.details{
+border:black solid 2px;
+
+height:40vh;
+/* margin: 20px; */
+width:40%;
+margin-left: 50px;
+margin:20px;
+padding: 3rem;
+}
+/* animation */
+.btn{
+    line-height: 50px;
+  height: 100px;
+  width:90%;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+
+}
+.btn{
+    color: #FFF;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn span{
+transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(16, 14, 14, 0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.btn:hover span {
+  letter-spacing: 15px;
+}
+.btn:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color:transparent;
+}
+.btn:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+
+
+/* input bx animation */
+.form__label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+
+.form__input {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+	margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: transparent;
+  border: none;
+  width: 70%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+/* search button animation */
+.wrapper{
+ 
+ 
+}
+
+a{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  
+  transition: all .35s;
+}
+
+a span{
+  
+  z-index: 2;
+}
+
+a::after{
+ 
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all .35s;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a:hover:after{
+  width: 100%;
+}
+/* //animation at stats */
+
+.stats{
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+#input2:hover{
+    box-shadow: 0 2px 1px 1px black;
+    font-weight: 900;
+}
+.stats:before,
+.stats:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.stats:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+.stats:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+#con{
+    border: #020024 solid 2px;
+    padding: 20px;
+    margin-top: 5;
+    opacity: 90%;
+}
+#con:hover{
+   opacity: 100%;
+   
+  box-shadow: 2px 30px 40px -2px rgb(11, 11, 11);
+}
+
+
+.pp:hover{
+    box-shadow: 2px 10px 40px black;
+}
